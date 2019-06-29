@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E439490-8DE3-4236-B79A-2A3EFF6B85E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SOFTWARE_MULTIMEDIA.My.MyApplication</StartupObject>
+    <RootNamespace>SOFTWARE_MULTIMEDIA</RootNamespace>
+    <AssemblyName>SOFTWARE_MULTIMEDIA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\KSA\Desktop\kate\ok\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOFTWARE_MULTIMEDIA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOFTWARE_MULTIMEDIA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C266A9D64CB83BF78CFE1996E502D36F2DA47F07</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SOFTWARE_MULTIMEDIA_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conjuntos.Designer.vb">
+      <DependentUpon>conjuntos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="conjuntos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="creditos.Designer.vb">
+      <DependentUpon>creditos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="creditos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.vb">
+      <DependentUpon>inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="llgallinas.Designer.vb">
+      <DependentUpon>llgallinas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="llgallinas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="llgatos.Designer.vb">
+      <DependentUpon>llgatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="llgatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="llovejas.Designer.vb">
+      <DependentUpon>llovejas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="llovejas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="llperros.Designer.vb">
+      <DependentUpon>llperros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="llperros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="llpollitos.Designer.vb">
+      <DependentUpon>llpollitos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="llpollitos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="llvacas.Designer.vb">
+      <DependentUpon>llvacas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="llvacas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ovejas.Designer.vb">
+      <DependentUpon>ovejas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ovejas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telon.Designer.vb">
+      <DependentUpon>telon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="telon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucerditos.Designer.vb">
+      <DependentUpon>ucerditos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucerditos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unitario.Designer.vb">
+      <DependentUpon>unitario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="unitario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lleno.Designer.vb">
+      <DependentUpon>lleno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lleno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uperros.Designer.vb">
+      <DependentUpon>uperros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uperros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vacio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vacio.Designer.vb">
+      <DependentUpon>vacio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="conjuntos.resx">
+      <DependentUpon>conjuntos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creditos.resx">
+      <DependentUpon>creditos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="llgallinas.resx">
+      <DependentUpon>llgallinas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="llgatos.resx">
+      <DependentUpon>llgatos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="llovejas.resx">
+      <DependentUpon>llovejas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="llperros.resx">
+      <DependentUpon>llperros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="llpollitos.resx">
+      <DependentUpon>llpollitos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="llvacas.resx">
+      <DependentUpon>llvacas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ovejas.resx">
+      <DependentUpon>ovejas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telon.resx">
+      <DependentUpon>telon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucerditos.resx">
+      <DependentUpon>ucerditos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unitario.resx">
+      <DependentUpon>unitario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lleno.resx">
+      <DependentUpon>lleno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uperros.resx">
+      <DependentUpon>uperros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vacio.resx">
+      <DependentUpon>vacio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="SOFTWARE_MULTIMEDIA_ClaveTemporal.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOZ CONJUNTO VACIO.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOZ CONJUNTO LLENO.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOZ CONJUNTO UNITARIO.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\088.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CERDO.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GALLINA.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MUY BIEN.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBEJA.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POLLITO PIO.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SONIDO FALLA.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SONIDO INTRO.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VACA.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OVEJA.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERRO.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GATO.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D9402FC-A5F1-40D8-9D5C-0996A9D06DC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>SOFTWARE MULTIMEDIA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SOFTWARE MULTIMEDIA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SOFTWARE MULTIMEDIA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lleno.Designer.vb">
+      <DependentUpon>lleno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lleno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="unitario.Designer.vb">
+      <DependentUpon>unitario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="unitario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vacio.Designer.vb">
+      <DependentUpon>vacio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vacio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lleno.resx">
+      <DependentUpon>lleno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unitario.resx">
+      <DependentUpon>unitario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vacio.resx">
+      <DependentUpon>vacio.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2paNQNGUaP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paisajesprimavera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conjuntps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tconjuntolleno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conjuntps1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pluto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tconjunto vacio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tconjunto vacio1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tconjunto unitario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tconjuntolleno1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taprende jugando.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taprende jugando1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conjuntps2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabezote conjunto vacío.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOLVER AL MENU ANTERIO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOZ CONJUNTO VACIO.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOZ CONJUNTO LLENO.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOZ CONJUNTO UNITARIO.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocadilo-historieta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOLVER AL MENU ANTERIO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dibujos-animados.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulotrasparente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dibujos-animados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLUTO1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
